@@ -1,0 +1,251 @@
+{
+  "x-generator": "NSwag v13.16.1.0 (NJsonSchema v10.7.2.0 (Newtonsoft.Json v11.0.0.0))",
+  "swagger": "2.0",
+  "info": {
+    "title": "MechaChat V1 API",
+    "version": "v1"
+  },
+  "host": "api.mecha.chat",
+  "basePath": "/v1",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1/user/update/status": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Updates the users status with the info they provided.",
+        "operationId": "User_CheckAuthentication",
+        "parameters": [
+          {
+            "name": "userChangeStatusForm",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/ChangeStatusModel"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The account is valid and is the real user, Update their status."
+          },
+          "403": {
+            "description": "The account is not found, Either because the account is not in the database, or because the account belongs to a different person."
+          }
+        }
+      }
+    },
+    "/v1/user/fetch/{userid}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "summary": "Fetches the use they requested by their ID.",
+        "operationId": "User_FetchSingle",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "userid",
+            "in": "path",
+            "required": true,
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "The account with the is you provided is not in the database, Cannot get the info."
+          },
+          "200": {
+            "description": "The account you are trying to get is in the database, Send account info to client."
+          }
+        }
+      }
+    },
+    "/v1/users/refreshtoken": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Refreshes the users session token so they stay logged in to the website.",
+        "operationId": "Users_RefreshCurrentJWToken",
+        "parameters": [
+          {
+            "name": "refreshData",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UserRefreshModel"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "404": {
+            "description": "The account is not found, Cannot refresh the session token."
+          },
+          "403": {
+            "description": "The account is banned, Cannot refresh the session token, and sends a request to log the user out."
+          },
+          "200": {
+            "description": "The account has been found, Refreshes the session token."
+          }
+        }
+      }
+    },
+    "/v1/users/create": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Creates a new user with the data provided.",
+        "operationId": "Users_CreateUserAccount",
+        "parameters": [
+          {
+            "name": "userCreationForm",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UserCreateModel"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "One of the inputs where not valid, Cannot create the account."
+          },
+          "201": {
+            "description": "All info provided is valid, Will create a new user with the info provided."
+          }
+        }
+      }
+    },
+    "/v1/users/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Sign the user in with the data they provided.",
+        "operationId": "Users_CheckAuthentication",
+        "parameters": [
+          {
+            "name": "userLoginForm",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/UserLoginModel"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "All info provided is correct, Will sign the user in."
+          },
+          "404": {
+            "description": "The user cannot be found with the info provided, Cannot sign the user in."
+          },
+          "403": {
+            "description": "The password the user provided does not match, Or the user has been banned, Cannot sign the user in."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ChangeStatusModel": {
+      "type": "object",
+      "required": [
+        "UserId",
+        "UserEmail",
+        "UserStatus",
+        "UserStatusMsg"
+      ],
+      "properties": {
+        "UserId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "UserEmail": {
+          "type": "string",
+          "minLength": 1
+        },
+        "UserStatus": {
+          "type": "string",
+          "minLength": 1
+        },
+        "UserStatusMsg": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "UserRefreshModel": {
+      "type": "object",
+      "required": [
+        "UserId",
+        "EmailAddress"
+      ],
+      "properties": {
+        "UserId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "EmailAddress": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "UserCreateModel": {
+      "type": "object",
+      "required": [
+        "EmailAddress",
+        "Username",
+        "Password",
+        "DateOfBirth"
+      ],
+      "properties": {
+        "EmailAddress": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Username": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Password": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DateOfBirth": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "UserLoginModel": {
+      "type": "object",
+      "required": [
+        "EmailAddress",
+        "Password"
+      ],
+      "properties": {
+        "EmailAddress": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Password": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

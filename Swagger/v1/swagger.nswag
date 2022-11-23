@@ -1,0 +1,66 @@
+{
+  "runtime": "Default",
+  "defaultVariables": null,
+  "documentGenerator": {
+    "webApiToOpenApi": {
+      "controllerNames": [
+        "MechaChat.API.Controllers.UserController",
+        "MechaChat.API.Controllers.UsersController"
+      ],
+      "isAspNetCore": false,
+      "resolveJsonOptions": false,
+      "defaultUrlTemplate": "v1/{controller?}/{action?}/{id?}",
+      "addMissingPathParameters": true,
+      "includedVersions": null,
+      "defaultPropertyNameHandling": "Default",
+      "defaultReferenceTypeNullHandling": "Null",
+      "defaultDictionaryValueReferenceTypeNullHandling": "NotNull",
+      "defaultResponseReferenceTypeNullHandling": "NotNull",
+      "generateOriginalParameterNames": true,
+      "defaultEnumHandling": "Integer",
+      "flattenInheritanceHierarchy": false,
+      "generateKnownTypes": true,
+      "generateEnumMappingDescription": false,
+      "generateXmlObjects": false,
+      "generateAbstractProperties": true,
+      "generateAbstractSchemas": true,
+      "ignoreObsoleteProperties": false,
+      "allowReferencesWithProperties": false,
+      "useXmlDocumentation": true,
+      "resolveExternalXmlDocumentation": true,
+      "excludedTypeNames": [],
+      "serviceHost": "api.mecha.chat/v1",
+      "serviceBasePath": null,
+      "serviceSchemes": [
+        "https"
+      ],
+      "infoTitle": "MechaChat V1 API",
+      "infoDescription": null,
+      "infoVersion": "v1",
+      "documentTemplate": null,
+      "documentProcessorTypes": [],
+      "operationProcessorTypes": [],
+      "typeNameGeneratorType": null,
+      "schemaNameGeneratorType": null,
+      "contractResolverType": null,
+      "serializerSettingsType": null,
+      "useDocumentProvider": true,
+      "documentName": "v1",
+      "aspNetCoreEnvironment": null,
+      "createWebHostBuilderMethod": null,
+      "startupType": null,
+      "allowNullableBodyParameters": true,
+      "useHttpAttributeNameAsOperationId": false,
+      "output": "swagger.json",
+      "outputType": "Swagger2",
+      "newLineBehavior": "Auto",
+      "assemblyPaths": [
+        "../../../MechaChat.API Build/net48/MechaChat.API.exe"
+      ],
+      "assemblyConfig": null,
+      "referencePaths": [],
+      "useNuGetCache": false
+    }
+  },
+  "codeGenerators": {}
+}

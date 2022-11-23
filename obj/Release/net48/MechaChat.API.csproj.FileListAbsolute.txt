@@ -1,0 +1,36 @@
+G:\MechaChat\MechaChat.API Build\net48\MechaChat.API.exe.config
+G:\MechaChat\MechaChat.API Build\net48\MechaChat.API.exe
+G:\MechaChat\MechaChat.API Build\net48\MechaChat.API.pdb
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.csproj.AssemblyReference.cache
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.csproj.SuggestedBindingRedirects.cache
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.GeneratedMSBuildEditorConfig.editorconfig
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.csproj.CoreCompileInputs.cache
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.csproj.CopyComplete
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.exe
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.pdb
+G:\MechaChat\MechaChat.API Build\net48\MechaChat.API.xml
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.xml
+G:\MechaChat\MechaChat.API\obj\Release\net48\MechaChat.API.exe.config
+G:\MechaChat\MechaChat.API Build\net48\Swagger\v1\swagger.json
+G:\MechaChat\MechaChat.API Build\net48\Swagger\assets\dark-theme.css
+G:\MechaChat\MechaChat.API Build\net48\Swagger\assets\logo.png
+G:\MechaChat\MechaChat.API Build\net48\Swagger\assets\custom-logo.js
+G:\MechaChat\MechaChat.API Build\net48\Swagger\assets\favicon.ico
+G:\Mecha Solutions\MechaChat.API Build\net48\Swagger\assets\custom-logo.js
+G:\Mecha Solutions\MechaChat.API Build\net48\Swagger\assets\dark-theme.css
+G:\Mecha Solutions\MechaChat.API Build\net48\Swagger\assets\favicon.ico
+G:\Mecha Solutions\MechaChat.API Build\net48\Swagger\assets\logo.png
+G:\Mecha Solutions\MechaChat.API Build\net48\Swagger\v1\swagger.json
+G:\Mecha Solutions\MechaChat.API Build\net48\MechaChat.API.exe.config
+G:\Mecha Solutions\MechaChat.API Build\net48\MechaChat.API.exe
+G:\Mecha Solutions\MechaChat.API Build\net48\MechaChat.API.pdb
+G:\Mecha Solutions\MechaChat.API Build\net48\MechaChat.API.xml
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.csproj.AssemblyReference.cache
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.csproj.SuggestedBindingRedirects.cache
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.exe.config
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.GeneratedMSBuildEditorConfig.editorconfig
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.csproj.CoreCompileInputs.cache
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.csproj.CopyComplete
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.exe
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.xml
+G:\Mecha Solutions\MechaChat.API\obj\Release\net48\MechaChat.API.pdb
